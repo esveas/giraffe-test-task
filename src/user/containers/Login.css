@@ -1,0 +1,9 @@
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authData {
+  margin: 10px;
+}
