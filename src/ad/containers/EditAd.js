@@ -21,7 +21,7 @@ class EditAd extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      ad: {},
+      ad: { title: '', description: '' },
       isEditMode: false,
       isWarning: false,
       lastAdId: getFromLs('lastAdId') || 0
