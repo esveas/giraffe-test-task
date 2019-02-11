@@ -73,7 +73,7 @@ class EditAd extends React.Component {
   handleCommonClick = () => {
     const { isEditMode, ad } = this.state;
     const date = new Date().toLocaleString();
-    const prevAds = getFromLs('adList');
+    const prevAds = getFromLs('adList') || [];
     if (ad.title && ad.description) {
       const { ads, id } = isEditMode
         ? this.getUpdatedAds(date, prevAds)
